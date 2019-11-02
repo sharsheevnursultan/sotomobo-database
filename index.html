@@ -2,69 +2,114 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="images/kisspng-turgutlu-sakall-letter-adala-typeface-s-5b172712c14d81.7471687915282439867918.png" />
+    <link rel="icon"
+          href="images/logo.png"/>
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sotomobo</title>
+    <title>SotoMobo</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/script.js" defer></script>
 </head>
 <body>
 
 
-
-
-
 <header>
-    <h1>
-        Sotomobo
-    </h1>
-    <div class="search-box">
-        <form>
-            <input class="place_for_search" type="text" id="text-to-find" value="" placeholder="Поиск" autofocus>
-            <input class="button_for_turn_back" value="Сбросить" type="button" onclick="javascript: FindOnPage('text-to-find',false); return false;" value=" " title="Отменить поиск">
-            <input class="button_for_search" value="Найти" type="submit" onclick="javascript: FindOnPage('text-to-find',true); return false;" value=" " title="Начать поиск">
-        </form>
-    </div>
+    <section class="container">
+            <div class="mainlogodiv">
+                <div class="sotomobo">
+                    SotoMobo
+                </div>
+                <div class="myLinks">
+                    <a class="btn-13 xiaomi-logo" target="_blank" href="https://i.mi.com">
+                        Mi Cloud
+                    </a>
+                    <a class="btn-13 samsung-logo" target="_blank"
+                       href="https://account.samsung.com/membership/intro">
+                        Samsung Cloud
+                    </a>
+                    <a class="btn-13 icloud-logo" target="_blank"
+                       href="https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp">
+                        Apple iCloud
+                    </a>
+                </div>
+            </div>
+        <div class="finder">
+            <form>
+                <div class="mySearchForm">
+                <input class=" place_for_search" type="text" id="text-to-find" value="" placeholder="Поиск" autofocus>
+                <input class="finder-btn" value="Сбросить" type="button"
+                       onclick=" FindOnPage('text-to-find',false); return false;" value=" "
+                       title="Отменить поиск">
+                <input class="finder-btn" value="Найти" type="submit"
+                       onclick="FindOnPage('text-to-find',true); return false;" value=" "
+                       title="Начать поиск">
+                </div>
+            </form>
+        </div>
+        <div class="myLine"></div>
+    </section>
+
 </header>
 
 <main>
-    <table border="1">
+    <section class="container">
+        <div id="form-main">
+            <div id="form-div">
+                <form class="form" id="form1">
 
-        <tr>
-            <th>№</th>
-            <th>ФИО</th>
-            <th>Номер телефона</th>
-            <th>Модель телефона</th>
-            <th>Цена</th>
-            <th>Цвет телефона</th>
-            <th>IMEI</th>
-            <th>Дата заключения договора</th>
-            <th>Последний срок оплаты</th>
-            <th>Ми аккаунт ID</th>
-            <th>Статус оплаты</th>
-            <th>Просрочка</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td></td>
-            <td></td>
-            <td>Redmi 7A</td>
-            <td></td>
-            <td>Black</td>
-            <td>868950044860721</td>
-            <td>17.10.19 16.15</td>
-            <td>17.12.19 16.15</td>
-            <td>4167440181</td>
-            <td>В процессе</td>
-            <td></td>
-        </tr>
+                    <p class="name">
+                        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+                    </p>
+
+                    <p class="email">
+                        <input name="email" type="password" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+                    </p>
 
 
+                    <div class="submit">
+                        <input type="submit" value="SEND" id="button-blue"/>
+                        <div class="ease"></div>
+                    </div>
+                </form>
+            </div>
+<!--        <table border="1">-->
+
+<!--            <tr>-->
+<!--                <th>№</th>-->
+<!--                <th>ФИО</th>-->
+<!--                <th>Номер телефона</th>-->
+<!--                <th>Модель телефона</th>-->
+<!--                <th>Цена</th>-->
+<!--                <th>Цвет телефона</th>-->
+<!--                <th>IMEI</th>-->
+<!--                <th>Дата заключения договора</th>-->
+<!--                <th>Последний срок оплаты</th>-->
+<!--                <th>Ми аккаунт ID</th>-->
+<!--                <th>Статус оплаты</th>-->
+<!--                <th>Просрочка</th>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>1</td>-->
+<!--                <td></td>-->
+<!--                <td></td>-->
+<!--                <td>Redmi 7A</td>-->
+<!--                <td></td>-->
+<!--                <td>Black</td>-->
+<!--                <td>868950044860721</td>-->
+<!--                <td>17.10.19 16.15</td>-->
+<!--                <td>17.12.19 16.15</td>-->
+<!--                <td>4167440181</td>-->
+<!--                <td>В процессе</td>-->
+<!--                <td></td>-->
+<!--            </tr>-->
 
 
-    </table>
+<!--        </table>-->
 
+    </section>
 
 </main>
 </body>
